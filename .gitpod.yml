@@ -2,13 +2,10 @@ tasks:
   - init: |
       sudo apt-get update
       sudo apt-get install -y opam
-      opam init
+      opam init --bare -y
       eval $(opam env)
-      opam install coq-lsp.0.1.8+8.17
-      opam install coq-waterproof.2.1.0+8.17
-  - command: | 
-      code metric_spaces_blue.mv
-
+      opam install -y coq-lsp.0.1.8+8.17
+      opam install -y coq-waterproof.2.1.0+8.17
 vscode:
   extensions:
     - waterproof-tue.waterproof
