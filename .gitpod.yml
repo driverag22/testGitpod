@@ -1,6 +1,7 @@
 tasks:
   - init: |
-    sudo apt-get install opam
+    sudo apt-get update
+    sudo apt-get install -y opam
     opam init
     eval $(opam env)
     opam install coq-lsp.0.1.8+8.17
