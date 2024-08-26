@@ -1,12 +1,6 @@
-tasks:
-  - init: |
-      sudo apt-get update -y
-      sudo apt-get install -y opam
-      opam init --bare -y
-      opam switch create default --packages=ocaml-base-compiler.4.14.1 -y
-      eval $(opam env)
-      opam install -y coq-lsp.0.1.8+8.17
-      opam install -y coq-waterproof.2.1.0+8.17
+image:
+  file: .gitpod.Dockerfile
+
 vscode:
   extensions:
     - waterproof-tue.waterproof
