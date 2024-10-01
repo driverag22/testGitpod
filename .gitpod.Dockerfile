@@ -17,7 +17,7 @@ RUN opam init --disable-sandboxing --bare -y; \
 
 RUN echo "Going to install coq-lsp";\
     opam install coq-lsp.0.1.8+8.17 -y ; \
-    opam pin add https://github.com/impermeable/coq-waterproof.git#2.1.1+8.17 -y ;
+    opam pin add https://github.com/impermeable/coq-waterproof.git#2.1.0+8.17 -y ;
 
 RUN eval $(opam env);
 
